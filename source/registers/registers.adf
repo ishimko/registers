@@ -38,7 +38,41 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=
+HierarchyInformation=asynchronousregister_tb|TB_ARCHITECTURE|0 synchronousregister_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
+
+[Groups]
+task 1=1
+task 1\asynchronous=1
+task 1\asynchronous\test-bench=1
+task 1\synchronous=1
+basic=1
+task 1\synchronous\test-bench=1
+
+[Files]
+task 1\asynchronous/AsynchronousRegister.vhd=-1
+task 1\asynchronous\test-bench/asynchronousregister_TB.vhd=-1
+task 1\asynchronous\test-bench/asynchronousregister_TB_runtest.do=-1
+task 1\synchronous/SynchronousRegister.vhd=-1
+task 1\synchronous\test-bench/synchronousregister_TB.vhd=-1
+task 1\synchronous\test-bench/synchronousregister_TB_runtest.do=-1
+basic/and2.vhd=-1
+basic/D_Enable_Latch.vhd=-1
+basic/inv.vhd=-1
+basic/nor2.vhd=-1
+basic/D_FlipFlop.vhd=-1
+
+[Files.Data]
+.\src\task 1\asynchronous\AsynchronousRegister.vhd=VHDL Source Code
+.\src\task 1\asynchronous\test-bench\asynchronousregister_TB.vhd=VHDL Test Bench
+.\src\task 1\asynchronous\test-bench\asynchronousregister_TB_runtest.do=Macro
+.\src\task 1\synchronous\SynchronousRegister.vhd=VHDL Source Code
+.\src\task 1\synchronous\test-bench\synchronousregister_TB.vhd=VHDL Source Code
+.\src\task 1\synchronous\test-bench\synchronousregister_TB_runtest.do=Macro
+.\src\basic\and2.vhd=VHDL Source Code
+.\src\basic\D_Enable_Latch.vhd=VHDL Source Code
+.\src\basic\inv.vhd=VHDL Source Code
+.\src\basic\nor2.vhd=VHDL Source Code
+.\src\basic\D_FlipFlop.vhd=VHDL Source Code
 
