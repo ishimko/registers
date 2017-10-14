@@ -18,7 +18,7 @@ component AsynchronousRegister
 			);
 	end component;
 	
-	signal Din : STD_LOGIC_VECTOR(n-1 downto 0) := std_logic_vector(to_unsigned(0, n));
+	signal Din : STD_LOGIC_VECTOR(n-1 downto 0) := (others => '0');
 	signal EN : STD_LOGIC := '0';
 	
 	signal Dout_beh : STD_LOGIC_VECTOR(n-1 downto 0);

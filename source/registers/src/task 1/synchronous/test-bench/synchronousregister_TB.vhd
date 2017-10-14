@@ -19,7 +19,7 @@ component SynchronousRegister
 			);
 	end component;
 	
-	signal Din : STD_LOGIC_VECTOR(n-1 downto 0) := std_logic_vector(to_unsigned(0, n));
+	signal Din : STD_LOGIC_VECTOR(n-1 downto 0) := (others => '0');
 	signal EN : STD_LOGIC := '1';
 	signal CLK : std_logic := '0';
 	
