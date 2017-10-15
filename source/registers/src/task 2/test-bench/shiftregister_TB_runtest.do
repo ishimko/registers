@@ -7,7 +7,8 @@ wave -noreg Sin
 wave -noreg SE
 wave -noreg CLK
 wave -noreg RST
-wave -noreg Dout		  
+wave -noreg -bin Dout_beh
+wave -noreg -bin Dout_struct
 
 run 1us
 # The following lines can be used for timing simulation

@@ -8,20 +8,20 @@ entity ShiftRegister is
 		SE, 
 		CLK, 
 		RST: in std_logic;
-		Dout: out std_logic_vector(N-1 downto 0)
+		Dout: out std_logic_vector(0 to N-1)
 		);
 end ShiftRegister;				  
 
 architecture beh of ShiftRegister is
-	signal register_state: std_logic_vector(N-1 downto 0);
+	signal register_state: std_logic_vector(0 to N-1);
 begin
-	main: process (CLK, RST)
+	main: process (CLK, RST, Sin, SE)
 	begin
 		if RST = '1' then
 			register_state <= (others => '0');
 		elsif rising_edge(CLK) then
 			if SE = '1' then
-				register_state <= register_state(N-2 downto 0) & Sin;
+				register_state <= Sin & register_state(0 to N-2);
 			end if;
 		end if;
 	end process;	
@@ -29,7 +29,7 @@ begin
 	Dout <= register_state; 
 end beh;
 
-architecture struct of ShiftReg is
+architecture struct of ShiftRegister is
 	component FDCE is
 		port (
 			CLK: in std_logic;
@@ -39,7 +39,7 @@ architecture struct of ShiftReg is
 			Q: out std_logic
 			);
 	end component;	  					   
-	signal outS: std_logic_vector(N-1 downto 0);
+	signal outS: std_logic_vector(0 to N-1);
 begin			   
 	U_0: entity FDCE 
 	port map(
