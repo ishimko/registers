@@ -70,6 +70,8 @@ task 3.c=1
 task 3.c\test-bench=1
 task 3.b=1
 task 3.b\test-bench=1
+task 3.d=1
+task 3.d\test-bench=1
 
 [Files]
 task 1\asynchronous/AsynchronousRegister.vhd=-1
@@ -96,6 +98,9 @@ task 3.c\test-bench/LFSR_Out_tb.vhd=-1
 task 3.b/LFSR_In.vhd=-1
 task 3.b\test-bench/LFSR_In_tb.do=-1
 task 3.b\test-bench/LFSR_In_tb.vhd=-1
+task 3.d/Signature.vhd=-1
+task 3.d\test-bench/Signature_tb.do=-1
+task 3.d\test-bench/Signature_tb.vhd=-1
 
 [Files.Data]
 .\src\task 1\asynchronous\AsynchronousRegister.vhd=VHDL Source Code
@@ -122,4 +127,7 @@ task 3.b\test-bench/LFSR_In_tb.vhd=-1
 .\src\task 3.b\LFSR_In.vhd=VHDL Source Code
 .\src\task 3.b\test-bench\LFSR_In_tb.do=Macro
 .\src\task 3.b\test-bench\LFSR_In_tb.vhd=VHDL Source Code
+.\src\task 3.d\Signature.vhd=VHDL Source Code
+.\src\task 3.d\test-bench\Signature_tb.do=Macro
+.\src\task 3.d\test-bench\Signature_tb.vhd=VHDL Source Code
 
