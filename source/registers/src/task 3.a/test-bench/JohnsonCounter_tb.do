@@ -6,7 +6,7 @@ asim +access +r JohnsonCounter_tb
 wave
 wave -noreg CLK
 wave -noreg RST
-wave -noreg Pout		  
+wave -noreg -bin Pout		  
 
 run 1us
 # The following lines can be used for timing simulation
