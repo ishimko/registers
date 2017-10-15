@@ -31,6 +31,19 @@ EnableDebug=0
 
 [LocalVhdlSets]
 CompileWithDebug=0
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
 
 [$LibMap$]
 registers=.
@@ -38,7 +51,7 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=shiftregister_tb|TB_ARCHITECTURE|0
+HierarchyInformation=johnsoncounter_tb|TESTBENCH|0 lfsr_in_tb|Beh|0 shiftregister_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -51,8 +64,10 @@ task 1\synchronous\test-bench=1
 basic=1
 task 2=1
 task 2\test-bench=1
-task 3=1
-task 3\test-bench=1
+task 3.a=1
+task 3.a\test-bench=1
+task 3.c=1
+task 3.c\test-bench=1
 
 [Files]
 task 1\asynchronous/AsynchronousRegister.vhd=-1
@@ -70,9 +85,12 @@ basic/FDCE.vhd=-1
 task 2/ShiftRegister.vhd=-1
 task 2\test-bench/shiftregister_TB.vhd=-1
 task 2\test-bench/shiftregister_TB_runtest.do=-1
-task 3/JohnsonCounter.vhd=-1
-task 3\test-bench/JohnsonCounter_tb.do=-1
-task 3\test-bench/JohnsonCounter_tb.vhd=-1
+task 3.a/JohnsonCounter.vhd=-1
+task 3.a\test-bench/JohnsonCounter_tb.do=-1
+task 3.a\test-bench/JohnsonCounter_tb.vhd=-1
+task 3.c/LFSR_Out.vhd=-1
+task 3.c\test-bench/LFSR_Out_tb.do=-1
+task 3.c\test-bench/LFSR_Out_tb.vhd=-1
 
 [Files.Data]
 .\src\task 1\asynchronous\AsynchronousRegister.vhd=VHDL Source Code
@@ -90,7 +108,10 @@ task 3\test-bench/JohnsonCounter_tb.vhd=-1
 .\src\task 2\ShiftRegister.vhd=VHDL Source Code
 .\src\task 2\test-bench\shiftregister_TB.vhd=VHDL Source Code
 .\src\task 2\test-bench\shiftregister_TB_runtest.do=Macro
-.\src\task 3\JohnsonCounter.vhd=VHDL Source Code
-.\src\task 3\test-bench\JohnsonCounter_tb.do=Macro
-.\src\task 3\test-bench\JohnsonCounter_tb.vhd=VHDL Source Code
+.\src\task 3.a\JohnsonCounter.vhd=VHDL Source Code
+.\src\task 3.a\test-bench\JohnsonCounter_tb.do=Macro
+.\src\task 3.a\test-bench\JohnsonCounter_tb.vhd=VHDL Source Code
+.\src\task 3.c\LFSR_Out.vhd=VHDL Source Code
+.\src\task 3.c\test-bench\LFSR_Out_tb.do=Macro
+.\src\task 3.c\test-bench\LFSR_Out_tb.vhd=VHDL Source Code
 
