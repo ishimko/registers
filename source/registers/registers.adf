@@ -38,7 +38,7 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=shiftregister_tb|TB_ARCHITECTURE|0 synchronousregister_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=shiftregister_tb|TB_ARCHITECTURE|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -51,6 +51,8 @@ task 1\synchronous\test-bench=1
 basic=1
 task 2=1
 task 2\test-bench=1
+task 3=1
+task 3\test-bench=1
 
 [Files]
 task 1\asynchronous/AsynchronousRegister.vhd=-1
@@ -68,6 +70,9 @@ basic/FDCE.vhd=-1
 task 2/ShiftRegister.vhd=-1
 task 2\test-bench/shiftregister_TB.vhd=-1
 task 2\test-bench/shiftregister_TB_runtest.do=-1
+task 3/JohnsonCounter.vhd=-1
+task 3\test-bench/JohnsonCounter_tb.do=-1
+task 3\test-bench/JohnsonCounter_tb.vhd=-1
 
 [Files.Data]
 .\src\task 1\asynchronous\AsynchronousRegister.vhd=VHDL Source Code
@@ -85,4 +90,7 @@ task 2\test-bench/shiftregister_TB_runtest.do=-1
 .\src\task 2\ShiftRegister.vhd=VHDL Source Code
 .\src\task 2\test-bench\shiftregister_TB.vhd=VHDL Source Code
 .\src\task 2\test-bench\shiftregister_TB_runtest.do=Macro
+.\src\task 3\JohnsonCounter.vhd=VHDL Source Code
+.\src\task 3\test-bench\JohnsonCounter_tb.do=Macro
+.\src\task 3\test-bench\JohnsonCounter_tb.vhd=VHDL Source Code
 
