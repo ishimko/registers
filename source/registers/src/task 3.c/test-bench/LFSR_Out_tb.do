@@ -7,7 +7,7 @@ wave
 wave -noreg CLK
 wave -noreg RST
 wave -noreg Pout		  
-wave -noreg -bin -reverseorder State
+wave -noreg -bin State
 
 run 1us    
 # The following lines can be used for timing simulation
