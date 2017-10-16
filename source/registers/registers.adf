@@ -51,7 +51,7 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=asynchronousregister_tb|TB_ARCHITECTURE|0 synchronousregister_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=johnsoncounter_tb|TESTBENCH|0 shiftregister_tb|TB_ARCHITECTURE|0 synchronousregister_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 

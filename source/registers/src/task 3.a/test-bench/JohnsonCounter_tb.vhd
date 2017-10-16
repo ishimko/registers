@@ -25,5 +25,13 @@ begin
 		);
 	
 	CLK <= not CLK after clock_period;
-	RST <= '1' after clock_period * 20 when RST = '0' else '0' after clock_period;
+	
+	reset: process
+	begin
+		RST <= '1';
+		wait for clock_period;
+		RST <= '0';
+		wait for clock_period * 20;
+	end process;
+	
 end TESTBENCH;
