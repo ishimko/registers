@@ -51,7 +51,7 @@ Active_lib=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=lfsr_in_tb|Beh|0 lfsr_out_tb|Beh|0
+HierarchyInformation=asynchronousregister_tb|TB_ARCHITECTURE|0 synchronousregister_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 

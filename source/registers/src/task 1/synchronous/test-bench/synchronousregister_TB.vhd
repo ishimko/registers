@@ -52,7 +52,14 @@ begin
 
 	CLK <= not CLK after clock_period;	
 	Din <= Din + "1" after clock_period * 2;
-	EN <= not EN after clock_period * 10;
+	
+	enable: process
+	begin
+		EN <= '1';
+		wait for clock_period;
+		EN <= '0';
+		wait for clock_period * 4;
+	end	process;
 
 end TB_ARCHITECTURE;
 

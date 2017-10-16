@@ -25,7 +25,7 @@ component AsynchronousRegister
 	signal Dout_struct : STD_LOGIC_VECTOR(n-1 downto 0);
 	
 	constant register_size : integer := 4;
-	constant delay : time := 10 ns;
+	constant in_delay : time := 10 ns;
 begin
 	
 	beh : entity AsynchronousRegister(beh)
@@ -46,8 +46,15 @@ begin
 		Dout => Dout_struct
 		);
 	
-	Din <= Din + "1" after delay;
-	EN <= not EN after delay;
+	Din <= Din + "1" after in_delay;
+	
+	enable: process
+	begin
+		EN <= '1';
+		wait for in_delay;
+		EN <= '0';
+		wait for in_delay * 4;
+	end	process;
 	
 end TB_ARCHITECTURE;
 
