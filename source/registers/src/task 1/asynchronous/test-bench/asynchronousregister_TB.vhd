@@ -50,10 +50,11 @@ begin
 	
 	enable: process
 	begin
+		wait for in_delay / 3;
 		EN <= '1';
-		wait for in_delay;
+		wait for in_delay / 3;
 		EN <= '0';
-		wait for in_delay * 4;
+		wait for in_delay * 4 + in_delay / 3;
 	end	process;
 	
 end TB_ARCHITECTURE;
